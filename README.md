@@ -34,3 +34,11 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 ```
+
+## CUDA
+
+```bash
+export CUDA_HOME=/usr/local/<cuda version>
+export PATH=/usr/local/<cuda version>/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/<cuda version>/lib64:$LD_LIBRARY_PATH
+```
