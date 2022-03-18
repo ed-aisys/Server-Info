@@ -8,20 +8,33 @@
 - SATA SSD: 1.92TB (Intel S4510)
 - 1 Gbps NIC (Future expansion to have InfiniBand)
 
+**IMPORTANT**: The server can only be accessed within Informatics firewall through Ethernet cables in side building or proxy jump through `ssh.inf.ed.ac.uk`
 
 ## Create User
 
 ```bash
-sudo useradd -m -G sudo <user name> # user WITH root privileges
-sudo useradd -m <user name>         # user WITHOUT root privileges
+sudo useradd -m -G sudo <username> # user WITH root privileges
+sudo useradd -m <username>         # user WITHOUT root privileges
 
-sudo passwd <user name>             # set user password
+sudo passwd <username>             # set user password
 ```
+
+After the default passward is set for users, they can login and change their own password by `passwd`
 
 ## Storage
 
 ```bash
-sudo usermod -aG storage <user name>
+sudo usermod -aG storage <username>
+```
+
+**IMPORTANT**: Home directory is only for downloads, compilation. Put data on NVMe SSD under `/mnt/raid0nvme1`
+
+## Remote Access
+
+For users want to have ssh access by public/private key pair
+```bash
+ssh-copy-id <username>@gala1   # execute on local machine with key pair
+ssh <username>@gala1
 ```
 
 ## Anaconda
@@ -29,7 +42,7 @@ sudo usermod -aG storage <user name>
 Add user to anaconda group
 
 ```bash
-sudo usermod -aG anaconda3 <user name>
+sudo usermod -aG anaconda3 <username>
 ```
 
 Add the following to .bashrc or .zshrc
