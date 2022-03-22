@@ -13,8 +13,8 @@
 ## Create User
 
 ```bash
-sudo useradd -m -G sudo <username> # user WITH root privileges
-sudo useradd -m <username>         # user WITHOUT root privileges
+sudo useradd -m -s /usr/bin/bash -G sudo <username> # user WITH root privileges
+sudo useradd -m -s /usr/bin/bash <username>         # user WITHOUT root privileges
 
 sudo passwd <username>             # set user password
 ```
