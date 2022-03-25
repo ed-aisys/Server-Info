@@ -29,6 +29,12 @@ After the default passward is set for users, they can login and change their own
 sudo usermod -aG storage <username>
 ```
 
+For non-sudoers, do the following instead
+```bash
+sudo mkdir /mnt/raid0nvme1/<username>
+sudo chown <username>:<username> /mnt/raid0nvme1/<username>
+```
+
 **IMPORTANT**: Home directory is only for downloads, compilation. Put data on NVMe SSD under `/mnt/raid0nvme1`
 
 ## Remote Access
@@ -39,12 +45,14 @@ ssh-copy-id <username>@gala1   # execute on local machine with key pair
 ssh <username>@gala1
 ```
 
-## Anaconda
+## Software Stack
 
 Add user to anaconda group
 
 ```bash
 sudo usermod -aG anaconda3 <username>
+sudo usermod -aG docker <username>      # docker access
+sudo usermod -aG microk8s <username>    # standalone k8s accress
 ```
 
 Add the following to .bashrc or .zshrc
@@ -64,6 +72,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 ```
+
+
+
 
 ## CUDA
 
