@@ -8,7 +8,7 @@
 - SATA SSD: 1.92TB (Intel S4510)
 - 1 Gbps NIC (Future expansion to have InfiniBand)
 
-![G482-Z54](https://www.gigabyte.com/FileUpload/Global/Microsite/547/innergigabyteimages/G482-Z54_BlockDiagram_.png)
+![G482-Z54](gala.jpg)
 
 **IMPORTANT**: The server can only be accessed within Informatics firewall through Ethernet cables in side building or proxy jump through `ssh.inf.ed.ac.uk`
 
