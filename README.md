@@ -1,4 +1,8 @@
-# cluster-info
+# Cluster
+
+## Server Information
+
+### gala1
 
 - 4U server - PCIe 4.0 (Chassis similar to Gigabyte G482-Z54)
 - CPU: 2 x 28 CPU cores (AMD EPYC Zen 3, 7453)
@@ -9,6 +13,22 @@
 - 1 Gbps NIC (Future expansion to have InfiniBand)
 
 ![G482-Z54](gala.jpg)
+
+### jazz1
+
+- Workstation server - PCIe 4.0
+- CPU: 1 x 16 CPU cores (AMD Ryzen 9, 5950X)
+- GPU: 1 x Nvidia 3090
+- Memory: 128 DDR4 3200MHz (4 x 32GB)
+- NVMe SSD: 1 x 2TB (Samsung 980 Pro, M.2, PCIe 4.0)
+- SATA SSD: 1 x 4TB (Samsung 870 QVO)
+
+### Jetson AGX Orin Developer Kit
+
+- CPU: 1 x 12 CPU cores (Arm® Cortex®-A78AE v8.2)
+- SD Card: 1 x 128GB
+- NVMe SSD: TBD
+
 
 **IMPORTANT**: The server can only be accessed within Informatics firewall through Ethernet cables in side building or proxy jump through `ssh.inf.ed.ac.uk`
 
