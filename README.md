@@ -113,4 +113,16 @@ export PATH=${CUDA_HOME}/bin:$PATH
 export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
 ```
 
+## Disks
 
+(Thu 31 Aug 2023 05:21:42 PM BST)
+
+```text
+/dev/sda3       1.8T  1.2T  491G  71% /
+/dev/md0        7.0T  4.7T  2.0T  72% /mnt/raid0nvme1
+/dev/sdb1       3.6T  2.7T  737G  79% /mnt/data
+/dev/md1         15T  4.7T  9.8T  33% /mnt/raid0sata1
+...
+```
+
+Please do not download dataset directly to /home directory.
