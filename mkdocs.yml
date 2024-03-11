@@ -35,6 +35,7 @@ nav:
   - 'Must Read!': 'important.md'
   - 'Cluster Summary': 'servers/summary.md'
   - 'Cluster Info': 
+    - 'Proxy': 'servers/azure.md'
     - 'Gala': 'servers/gala.md'
     - 'Jazz': 'servers/jazz.md'
   - 'User Management': 'manual/user.md'
