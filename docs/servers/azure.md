@@ -34,6 +34,7 @@ I have created a sub-network using Wireguard:
 
 - jazz IP: `192.168.168.3`
 - gala IP: `192.168.168.4`
+- fuji IP: 192.168.168.6
 
 You can configure your SSH file as follows:
 
@@ -51,6 +52,11 @@ Host wggala
     HostName 192.168.168.4
     User user
     ProxyJump azure
+
+Host wgfuji
+    HostName 192.168.168.6
+    User user
+    ProxyJump azure
 ```
 
 After adding your public key to both gala, jazz, and azure, you will be able to successfully log in using the following command:
@@ -58,6 +64,7 @@ After adding your public key to both gala, jazz, and azure, you will be able to 
 ```
 ssh wgjazz
 ssh wggala
+ssh wgfuji
 ```
 
 ## CloudFlare Zero Tier (Recommended for users in China or other Asian countries)
@@ -66,3 +73,6 @@ This method serves as a backup plan in case the previous services are somehow un
 
 1. Open `gala.chivier.site` or `jazz.chivier.site`.
 2. Use CloudFlare Zero Tier to log in.
+
+TODO: fuji don't have cloudflare proxy. My personal zero trust quota is full, and new account is on the way.
+
