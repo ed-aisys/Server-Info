@@ -4,9 +4,11 @@
 
 | Server Name | IP | Brief Conf |
 | ----------- | -- | ---------- |
-| gala | 129.215.164.41 (gala.ed.chivier.site) | 8 * A5000 |
-| jazz | 129.215.91.176 (jazz.ed.chivier.site) | 1 * RTX 3090 |
-| fuji | 129.215.164.141 (fuji.ed.chivier.site) | 4 * A6000 |
+| gala | 129.215.164.41 (gala.chivier.site) | 8 * A5000 |
+| jazz | 129.215.91.176 (jazz.chivier.site) | 1 * RTX 3090 |
+| fuji1 | 129.215.164.141 (fuji1.chivier.site) | 4 * A6000 |
+| fuji2 | 129.215.164.142 (fuji2.chivier.site) | 4 * A5000 |
+| fuji3 | 129.215.164.143 (fuji3.chivier.site) | 4 * A6000 |
 
 ## User List
 
