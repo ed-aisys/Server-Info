@@ -30,7 +30,9 @@ Ed-AISys Username: `aisys`
 
 Port: 5567
 
-** Contact Yeqi(chivier.humber@outlook.com) or other people who has account on Azure server **
+!!! Add new user
+
+    Contact Yeqi(chivier.humber@outlook.com) or other people who has account on Azure server 
 
 
 I have created a sub-network using Wireguard:
