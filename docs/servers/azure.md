@@ -28,7 +28,10 @@ Azure server IP: `172.167.229.23`
 
 Ed-AISys Username: `aisys`
 
-Ed-AISys Password: `fsJKRs99$PHFy!b`
+Port: 5567
+
+** Contact Yeqi(chivier.humber@outlook.com) or other people who has account on Azure server **
+
 
 I have created a sub-network using Wireguard:
 
