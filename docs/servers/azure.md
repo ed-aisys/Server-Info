@@ -24,15 +24,20 @@ sudo launchctl load /Library/LaunchDaemons/org.openvpn.client.plist
 
 I have set up an Azure Education Server in London, which acts as a reverse proxy tunnel. There is also a backup server in Strasbourg, making this method highly robust and stable.
 
-Azure server IP: `172.167.229.23`
+Azure server IP/Hostname: `172.167.229.23`/`wireproxy.ed-aisys.com`
 
 Ed-AISys Username: `aisys`
 
-Port: 5567
+Port: `5567`
 
 !!! Add new user
 
     Contact Yeqi(chivier.humber@outlook.com) or other people who has account on Azure server 
+
+!!! warning "Warning"
+
+    Don't download large data over this proxy server. Monthly data transfer quote is limited on this server! (around 2.5 TB per month).
+    If you Really need transfer huge amount data, call Yeqi or use Official OpenVPN.
 
 
 I have created a sub-network using Wireguard:
