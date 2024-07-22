@@ -109,7 +109,9 @@ This method serves as a backup plan in case the previous services are somehow un
 If you need add those cloudflare zero tier servers into `.ssh/config` file, you need to install `cloudflared` first.
 
 MacOS: `brew install cloudflared`
+
 Windwos: `winget install --id Cloudflare.cloudflared`
+
 More details: [Downloads · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/)
 
 Config example:
