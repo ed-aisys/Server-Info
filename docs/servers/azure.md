@@ -105,3 +105,40 @@ This method serves as a backup plan in case the previous services are somehow un
 | Fuji1       | fuji1.chivier.site   |
 | Fuji2       | fuji2.chivier.site   |
 | Fuji3       | fuji3.chivier.site   |
+
+If you need add those cloudflare zero tier servers into `.ssh/config` file, you need to install `cloudflared` first.
+
+MacOS: `brew install cloudflared`
+Windwos: `winget install --id Cloudflare.cloudflared`
+More details: [Downloads · Cloudflare Zero Trust docs](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/)
+
+Config example:
+
+```text
+Host fuji1ssh
+    HostName fuji1.chivier.site
+    User user
+    ProxyCommand cloudflared access ssh --hostname %h
+
+Host fuji2ssh
+    HostName fuji2.chivier.site
+    User user
+    ProxyCommand cloudflared access ssh --hostname %h
+
+Host fuji3ssh
+    HostName fuji3.chivier.site
+    User user
+    ProxyCommand cloudflared access ssh --hostname %h
+
+Host jazzssh
+    HostName jazz.chivier.site
+    User user
+    ProxyCommand cloudflared access ssh --hostname %h
+
+Host galassh
+    HostName gala.chivier.site
+    User user
+    ProxyCommand cloudflared access ssh --hostname %h
+```
+
+**Important: Replace user with your actual username for each server.**
